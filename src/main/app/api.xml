@@ -26,7 +26,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     </flow>
     <flow name="get:/{billAccountNo}:account-billaccounts-sys-api-config">
         <set-payload value="{
-  &quot;accountNumber&quot;: 123456,
+  &quot;accountNumber&quot;: 1234567,
   &quot;premiseNumber&quot;: 123,
   &quot;customerNumber&quot;: 123,
   &quot;addresstypeCode&quot;: &quot;A&quot;,
