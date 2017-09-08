@@ -5,33 +5,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
     <flow name="getBillAccountsByAccountNo">
-        <set-payload value="{
-  &quot;accountNumber&quot;: 12345,
-  &quot;premiseNumber&quot;: 123,
-  &quot;customerNumber&quot;: 123,
-  &quot;addresstypeCode&quot;: &quot;A&quot;,
-  &quot;addressID&quot;: 123,
-  &quot;primaryPhoneID&quot;: 123,
-  &quot;secondaryPhoneID&quot;: 123,
-  &quot;accountStatusCode&quot;: &quot;AC&quot;,
-  &quot;accountStatusDescription&quot;: &quot;Active&quot;,
-  &quot;revenueClassCode&quot;: &quot;A&quot;,
-  &quot;revenueClassDescription&quot;: &quot;Class Desc&quot;,
-  &quot;tariffTypeCode&quot;: &quot;AA&quot;,
-  &quot;tariffTypeDescription&quot;: &quot;Type Desc&quot;,
-  &quot;accountTypeCode&quot;: &quot;VV&quot;,
-  &quot;accountTypeDescription&quot;: &quot;Account type Desc&quot;,
-  &quot;weatherGroupCode&quot;: &quot;GC&quot;,
-  &quot;weatherGroupDescription&quot;: &quot;Group Desc&quot;,
-  &quot;billGroup&quot;: 12,
-  &quot;dateLastBilled&quot;: &quot;date&quot;,
-  &quot;dateNextBilled&quot;: &quot;date&quot;,
-  &quot;summarySubordinate&quot;: &quot;s&quot;,
-  &quot;customerSegmentCode&quot;: &quot;S&quot;,
-  &quot;customerSegmentDescription&quot;: &quot;Segment&quot;,
-  &quot;accountHandlingCode&quot;: &quot;H&quot;,
-  &quot;accountHandlingDescription&quot;: &quot;H Desc&quot;
-}" doc:name="Set Payload"/>
+        <set-payload value="{   &quot;accountNumber&quot;: 123456,   &quot;premiseNumber&quot;: 123,   &quot;customerNumber&quot;: 123,   &quot;addresstypeCode&quot;: &quot;A&quot;,   &quot;addressID&quot;: 123,   &quot;primaryPhoneID&quot;: 123,   &quot;secondaryPhoneID&quot;: 123,   &quot;accountStatusCode&quot;: &quot;AC&quot;,   &quot;accountStatusDescription&quot;: &quot;Active&quot;,   &quot;revenueClassCode&quot;: &quot;A&quot;,   &quot;revenueClassDescription&quot;: &quot;Class Desc&quot;,   &quot;tariffTypeCode&quot;: &quot;AA&quot;,   &quot;tariffTypeDescription&quot;: &quot;Type Desc&quot;,   &quot;accountTypeCode&quot;: &quot;VV&quot;,   &quot;accountTypeDescription&quot;: &quot;Account type Desc&quot;,   &quot;weatherGroupCode&quot;: &quot;GC&quot;,   &quot;weatherGroupDescription&quot;: &quot;Group Desc&quot;,   &quot;billGroup&quot;: 12,   &quot;dateLastBilled&quot;: &quot;date&quot;,   &quot;dateNextBilled&quot;: &quot;date&quot;,   &quot;summarySubordinate&quot;: &quot;s&quot;,   &quot;customerSegmentCode&quot;: &quot;S&quot;,   &quot;customerSegmentDescription&quot;: &quot;Segment&quot;,   &quot;accountHandlingCode&quot;: &quot;H&quot;,   &quot;accountHandlingDescription&quot;: &quot;H Desc&quot; }" doc:name="Set Payload"/>
     </flow>
     <flow name="getBillAccountsByPhoneNumber">
         <set-payload value="{   &quot;BillAccountsInfo&quot;: [     {       &quot;accountNumber&quot;: 12345,       &quot;premiseNumber&quot;: 123,       &quot;customerNumber&quot;: 123,       &quot;addresstypeCode&quot;: &quot;A&quot;,       &quot;addressID&quot;: 123,       &quot;primaryPhoneID&quot;: 123,       &quot;secondaryPhoneID&quot;: 123,       &quot;accountStatusCode&quot;: &quot;AC&quot;,       &quot;accountStatusDescription&quot;: &quot;Active&quot;,       &quot;revenueClassCode&quot;: &quot;A&quot;,       &quot;revenueClassDescription&quot;: &quot;Class Desc&quot;,       &quot;tariffTypeCode&quot;: &quot;AA&quot;,       &quot;tariffTypeDescription&quot;: &quot;Type Desc&quot;,       &quot;accountTypeCode&quot;: &quot;VV&quot;,       &quot;accountTypeDescription&quot;: &quot;Account type Desc&quot;,       &quot;weatherGroupCode&quot;: &quot;GC&quot;,       &quot;weatherGroupDescription&quot;: &quot;Group Desc&quot;,       &quot;billGroup&quot;: 12,       &quot;dateLastBilled&quot;: &quot;date&quot;,       &quot;dateNextBilled&quot;: &quot;date&quot;,       &quot;summarySubordinate&quot;: &quot;s&quot;,       &quot;customerSegmentCode&quot;: &quot;S&quot;,       &quot;customerSegmentDescription&quot;: &quot;Segment&quot;,       &quot;accountHandlingCode&quot;: &quot;H&quot;,       &quot;accountHandlingDescription&quot;: &quot;H Desc&quot;     },     {       &quot;accountNumber&quot;: 12345,       &quot;premiseNumber&quot;: 123,       &quot;customerNumber&quot;: 123,       &quot;addresstypeCode&quot;: &quot;A&quot;,       &quot;addressID&quot;: 123,       &quot;primaryPhoneID&quot;: 123,       &quot;secondaryPhoneID&quot;: 123,       &quot;accountStatusCode&quot;: &quot;AC&quot;,       &quot;accountStatusDescription&quot;: &quot;Active&quot;,       &quot;revenueClassCode&quot;: &quot;A&quot;,       &quot;revenueClassDescription&quot;: &quot;Class Desc&quot;,       &quot;tariffTypeCode&quot;: &quot;AA&quot;,       &quot;tariffTypeDescription&quot;: &quot;Type Desc&quot;,       &quot;accountTypeCode&quot;: &quot;VV&quot;,       &quot;accountTypeDescription&quot;: &quot;Account type Desc&quot;,       &quot;weatherGroupCode&quot;: &quot;GC&quot;,       &quot;weatherGroupDescription&quot;: &quot;Group Desc&quot;,       &quot;billGroup&quot;: 12,       &quot;dateLastBilled&quot;: &quot;date&quot;,       &quot;dateNextBilled&quot;: &quot;date&quot;,       &quot;summarySubordinate&quot;: &quot;s&quot;,       &quot;customerSegmentCode&quot;: &quot;S&quot;,       &quot;customerSegmentDescription&quot;: &quot;Segment&quot;,       &quot;accountHandlingCode&quot;: &quot;H&quot;,       &quot;accountHandlingDescription&quot;: &quot;H Desc&quot;     }   ] }" doc:name="Set Payload"/>
