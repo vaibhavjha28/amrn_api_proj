@@ -1,0 +1,68 @@
+{
+  "MetersInfo": [
+    {
+      "billAccountNumber": 1234,
+      "servicePointId": 12,
+      "meterId": "m12",
+      "activityState": "A",
+      "energyType": "G",
+      "serviceType": "Gas",
+      "manufacturer": "test",
+      "readingUseDescription": "desc",
+      "numberOfDials": 12,
+      "effectiveDate": "2012-04-23T18:25:43.511Z",
+      "setCompleteDate": "2012-04-23T18:25:43.511Z",
+      "removeCompleteDate": "2012-04-23T18:25:43.511Z",
+      "meterStatusDescription": "desc",
+      "meterPointStatus": "active",
+      "meterPointType": "readtype",
+      "meterLocation": "loc",
+      "readingMethod": "method",
+      "meterRelationship": "rel",
+      "meterPhase": "phase",
+      "periodicUse": "use",
+      "serviceDrop": "drop",
+      "isAMI": false,
+      "electricMeterInformation": {
+        "deliveryVoltage": "d12",
+        "supplyVoltage": "s12",
+        "meterVoltage": "m12",
+        "transformerOwnership": "self"
+      },
+      "IsNonStandard": false,
+      "IsTheMeterOutside": true
+    },
+    {
+      "billAccountNumber": 1234,
+      "servicePointId": 12,
+      "meterId": "m12",
+      "activityState": "A",
+      "energyType": "G",
+      "serviceType": "Gas",
+      "manufacturer": "test",
+      "readingUseDescription": "desc",
+      "numberOfDials": 12,
+      "effectiveDate": "2012-04-23T18:25:43.511Z",
+      "setCompleteDate": "2012-04-23T18:25:43.511Z",
+      "removeCompleteDate": "2012-04-23T18:25:43.511Z",
+      "meterStatusDescription": "desc",
+      "meterPointStatus": "active",
+      "meterPointType": "readtype",
+      "meterLocation": "loc",
+      "readingMethod": "method",
+      "meterRelationship": "rel",
+      "meterPhase": "phase",
+      "periodicUse": "use",
+      "serviceDrop": "drop",
+      "isAMI": false,
+      "electricMeterInformation": {
+        "deliveryVoltage": "d12",
+        "supplyVoltage": "s12",
+        "meterVoltage": "m12",
+        "transformerOwnership": "self"
+      },
+      "IsNonStandard": false,
+      "IsTheMeterOutside": true
+    }
+  ]
+}

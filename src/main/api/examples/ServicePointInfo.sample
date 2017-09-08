@@ -1,0 +1,102 @@
+{
+  "billAccountNumber": 1234,
+  "servicePointId": "1",
+  "energyType": "type",
+  "serviceType": "Gas",
+  "deliveryRateCode": "code",
+  "deliveryRateName": "rate",
+  "supplyRateCode": "code",
+  "supplyRateName": "name",
+  "tariffCode": "code",
+  "tariffName": "name",
+  "activityState": "A",
+  "isDefaultRateForServiceType": true,
+  "meter": {
+    "billAccountNumber": 1234,
+    "servicePointId": 12,
+    "meterId": "m12",
+    "activityState": "A",
+    "energyType": "G",
+    "serviceType": "Gas",
+    "manufacturer": "test",
+    "readingUseDescription": "desc",
+    "numberOfDials": 12,
+    "effectiveDate": "2012-04-23T18:25:43.511Z",
+    "setCompleteDate": "2012-04-23T18:25:43.511Z",
+    "removeCompleteDate": "2012-04-23T18:25:43.511Z",
+    "meterStatusDescription": "desc",
+    "meterPointStatus": "active",
+    "meterPointType": "readtype",
+    "meterLocation": "loc",
+    "readingMethod": "method",
+    "meterRelationship": "rel",
+    "meterPhase": "phase",
+    "periodicUse": "use",
+    "serviceDrop": "drop",
+    "isAMI": false,
+    "electricMeterInformation": {
+      "deliveryVoltage": "d12",
+      "supplyVoltage": "s12",
+      "meterVoltage": "m12",
+      "transformerOwnership": "self"
+    },
+    "IsNonStandard": false,
+    "IsTheMeterOutside": true
+  },
+  "serviceTypeCode": "code",
+  "servicePointStatusCode": "code",
+  "servicePointStatusDescription": "desc",
+  "cityCountyCode": "code",
+  "cityCountyDescription": "desc",
+  "dateRateEffectiveSupply": "2012-04-23T18:25:43.511Z",
+  "dateRateEffectiveDelivery": "2012-04-23T18:25:43.511Z",
+  "gasServiceAttributes": [
+    {
+      "maximumAllowableOperatingPressure": 11,
+      "maximumDailyContractQuantity": 11,
+      "gasSupplyType": "type"
+    }
+  ],
+  "electricServiceAttributes": [
+    {
+      "deliveryVoltageCode": "code",
+      "deliveryVoltageDescription": "desc",
+      "deliveryVoltageDescriptionARES": "desc",
+      "supplyVoltageCode": "code",
+      "supplyVoltageDescription": "desc",
+      "supplyVoltageDescriptionARES": "desc",
+      "meteringTypeCode": "code",
+      "meteringTypeDescription": "desc",
+      "meteringTypeDescriptionARES": "desc",
+      "profileClass": "class",
+      "mvGroupCode": "code",
+      "mvGroupDecode": "code",
+      "hasTransformationCharge": true,
+      "effectivePLC": 111
+    }
+  ],
+  "deregulatedServiceAttributes": [
+    {
+      "currentSupplyTypeCode": "code",
+      "futureSupplyTypeCode": "code",
+      "futureSupplyTypeDescription": "desc",
+      "eligibleSwitchDate": "2012-04-23T18:25:43.511Z"
+    }
+  ],
+  "monthlyUsageInformation": {
+    "revenueMonth": "2012-04-23T18:25:43.511Z",
+    "startReadingDate": "2012-04-23T18:25:43.511Z",
+    "endReadingDate": "2012-04-23T18:25:43.511Z",
+    "daysInBillingPeriod": 2,
+    "numberOfPrimaries": 2,
+    "readingStatusCode": "code",
+    "readingStatusDescription": "desc",
+    "readingSourceCode": "code",
+    "readingSourceDescription": "desc",
+    "usageDetail": {
+      "usageTypeCode": "code",
+      "usageTypeDescription": "desc",
+      "usageQuantity": 2
+    }
+  }
+}

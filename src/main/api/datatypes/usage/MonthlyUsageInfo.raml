@@ -1,0 +1,43 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+  revenueMonth:
+    description:
+    type: datetime
+    required: false
+  startReadingDate:
+    description:
+    type: datetime
+    required: false
+  endReadingDate:
+    description:
+    type: datetime
+    required: false
+  daysInBillingPeriod:
+    description:
+    type: number
+    required: false
+  numberOfPrimaries:
+    description:
+    type: number
+    required: false
+  readingStatusCode:
+    description:
+    type: string
+    required: false
+  readingStatusDescription:
+    description:
+    type: string
+    required: false
+  readingSourceCode:
+    description:
+    type: string
+    required: false
+  readingSourceDescription:
+    description:
+    type: string
+    required: false
+  usageDetail:
+    description:
+    type: !include UsageType.raml
+    required: false

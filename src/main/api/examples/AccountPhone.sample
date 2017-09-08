@@ -1,0 +1,29 @@
+{
+  "billAcountNumber": 99999,
+  "phoneDetails": [
+    {
+      "phoneID": 1234,
+      "phoneType": "TBD",
+      "isPrimary": true,
+      "isUnlisted": false,
+      "isTextable": true,
+      "phoneNumberDetails": {
+        "areaCode": "011",
+        "mainNumber": "999-9999",
+        "extension": "1234"
+      }
+    },
+    {
+      "phoneID": 1234,
+      "phoneType": "TBD",
+      "isPrimary": true,
+      "isUnlisted": false,
+      "isTextable": true,
+      "phoneNumberDetails": {
+        "areaCode": "011",
+        "mainNumber": "999-9999",
+        "extension": "1234"
+      }
+    }
+  ]
+}

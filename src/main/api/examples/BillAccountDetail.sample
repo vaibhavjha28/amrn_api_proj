@@ -1,0 +1,258 @@
+{
+  "accountNumber": 12345,
+  "premise": {
+    "premiseNumber": 101,
+    "operatingCenterCode": "OCC",
+    "operatingCenterDesc": "This is code",
+    "companyCode": "CC12",
+    "companyDesc": "This is companycode",
+    "countyCode": "CAA",
+    "countyDesc": "county detail",
+    "streetAddress": {
+      "addressID": 12345,
+      "addressType": {
+        "addressTypeID": "H",
+        "description": "home address"
+      },
+      "isReadOnly": true,
+      "addressDetails": {
+        "addressLine1": "1901 Chouteau Ave",
+        "addressLine2": "",
+        "addressLine3": "",
+        "city": "St. Louis",
+        "state": "MO",
+        "postalCode": "63105",
+        "country": "US"
+      }
+    },
+    "premiseTypeCode": "RS",
+    "premiseTypeDescription": "Residential",
+    "taxingAreaCode": "TAXC",
+    "taxingAreaDescription": "TAXC description",
+    "weatherGroupCode": "WA",
+    "weatherGroupDescription": "Weather group desc",
+    "drivingDirections": "Direction"
+  },
+  "customer": {
+    "customerNumber": 123,
+    "status": "AC",
+    "statusDescription": "Active12345",
+    "applicationStatus": "AC",
+    "applicationStatusDescription": "Active",
+    "startDate": "2012-04-23T18:25:43.511Z",
+    "customerAddress": {
+      "customerNumber": 1234,
+      "address": {
+        "addressID": 12345,
+        "addressType": {
+          "addressTypeID": "H",
+          "description": "home address"
+        },
+        "isReadOnly": true,
+        "addressDetails": {
+          "addressLine1": "1901 Chouteau Ave",
+          "addressLine2": "",
+          "addressLine3": "",
+          "city": "St. Louis",
+          "state": "MO",
+          "postalCode": "63105",
+          "country": "US"
+        }
+      }
+    },
+    "customerPhones": [
+      {
+        "customerNumber": 1234,
+        "phoneDetails": {
+          "phoneID": 1234,
+          "phoneType": "TBD",
+          "isPrimary": true,
+          "isUnlisted": false,
+          "isTextable": true,
+          "phoneNumberDetails": {
+            "areaCode": "011",
+            "mainNumber": "999-9999",
+            "extension": "1234"
+          }
+        }
+      }
+    ],
+    "customerEmails": [
+      {
+        "customerNumber": 1234,
+        "customerEmailID": 1234,
+        "emailDetails": {
+          "isVerified": true,
+          "isNotPromotional": false,
+          "emailAddress": "test@ameren.com"
+        }
+      },
+      {
+        "customerNumber": 1234,
+        "customerEmailID": 12345,
+        "emailDetails": {
+          "isVerified": true,
+          "isNotPromotional": false,
+          "emailAddress": "test1@ameren.com"
+        }
+      }
+    ],
+    "customerType": "1",
+    "customerTypeDescription": "Customer Description 1234",
+    "firstName": "TestName",
+    "middleName": "MiddleName",
+    "lastName": "LastName",
+    "title": "mr",
+    "suffix": "JR",
+    "isSSNprovided": true,
+    "SSN": 12345678,
+    "creditScore": 2,
+    "completeName": "First Middle Last",
+    "DOB": "1982-04-23T18:25:43.511Z",
+    "languageCode": "EN",
+    "languageDescription": "ENG",
+    "BTC": "1982-04-23T18:25:43.511Z",
+    "DLNumber": "DL123456",
+    "DLState": "IL",
+    "maritalStatus": "M",
+    "employerName": "EmplrName",
+    "employeeCompany": "Ameren",
+    "seasonalResident": false,
+    "seniorCitizenActivationDiscount": false,
+    "companyName": "Ameren",
+    "legalName": "legalName",
+    "FEIN": 1232,
+    "SIC": "AMRN",
+    "incorporatedState": "IL",
+    "incorporatedCocurrentyCountry": "USA"
+  },
+  "mailingAddress": {
+    "billAccountNumber": 99999,
+    "address": {
+      "addressID": 12345,
+      "addressType": {
+        "addressTypeID": "H",
+        "description": "home address"
+      },
+      "isReadOnly": true,
+      "addressDetails": {
+        "addressLine1": "1901 Chouteau Ave",
+        "addressLine2": "",
+        "addressLine3": "",
+        "city": "St. Louis",
+        "state": "MO",
+        "postalCode": "63105",
+        "country": "US"
+      }
+    }
+  },
+  "primaryPhone": {
+    "billAcountNumber": 99999,
+    "phoneDetails": {
+      "phoneID": 1234,
+      "phoneType": "TBD",
+      "isPrimary": true,
+      "isUnlisted": false,
+      "isTextable": true,
+      "phoneNumberDetails": {
+        "areaCode": "011",
+        "mainNumber": "999-9999",
+        "extension": "1234"
+      }
+    }
+  },
+  "accountStatusCode": "AC",
+  "revenueClassCode": "R",
+  "revenueClassDescription": "Resedential",
+  "accountStatusDescription": "Active",
+  "tariffTypeCode": "12",
+  "tariffTypeDescription": "Resedential",
+  "accountTypeCode": "RC",
+  "accountTypeDescription": "Bill acc",
+  "weatherGroupCode": "WC",
+  "weatherGroupDescription": "weatherGroupDescription",
+  "billGroup": 19,
+  "dateLastBilled": "2012-04-23T18:25:43.511Z",
+  "dateNextBilled": "2012-04-23T18:25:43.511Z",
+  "summarySubordinate": false,
+  "collectionStatus": "123",
+  "collectionDescription": "collectionDescription",
+  "bankruptcy": "None",
+  "bankruptcyDescription": "NA",
+  "customerSegmentCode": "12",
+  "specialHandling": "csh",
+  "isSubjectToDisconnect": false,
+  "isCashOnlyRes": true,
+  "hasLegacyMeter": true,
+  "hasAMRMeter": false,
+  "hasAMIMeter": false,
+  "isInCollections": false,
+  "isEnrolledInAlerts": true,
+  "hasAccountPassword": true,
+  "hasFraudAlert": true,
+  "hasPullBill": true,
+  "peakTimeRewards": {
+    "programOptionType": {
+      "type": "PeakTimeRewards"
+    },
+    "programOptionStatus": {
+      "status": "Enrolled"
+    }
+  },
+  "budgetBilling": {
+    "programOptionType": {
+      "type": "BugetBilling"
+    },
+    "programOptionStatus": {
+      "status": "Enrolled"
+    }
+  },
+  "paperless": {
+    "programOptionType": {
+      "type": "PaperFree"
+    },
+    "programOptionStatus": {
+      "status": "Enrolled"
+    }
+  },
+  "directPay": {
+    "programOptionType": {
+      "type": "DirectPay"
+    },
+    "programOptionStatus": {
+      "status": "Enrolled"
+    }
+  },
+  "medicalEmergencyRegistry": {
+    "programOptionType": {
+      "type": "MedicalEmergency"
+    },
+    "programOptionStatus": {
+      "status": "Enrolled"
+    }
+  },
+  "communitySolar": {
+    "programOptionType": {
+      "type": "CommunitySolar"
+    },
+    "programOptionStatus": {
+      "status": "Enrolled"
+    }
+  },
+  "landlord": {
+    "programOptionType": {
+      "type": "Landlord"
+    },
+    "programOptionStatus": {
+      "status": "Enrolled"
+    }
+  },
+  "homeAutomation": {
+    "programOptionType": {
+      "type": "HomeAutomation"
+    },
+    "programOptionStatus": {
+      "status": "Enrolled"
+    }
+  }
+}

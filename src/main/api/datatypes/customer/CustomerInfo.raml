@@ -1,0 +1,218 @@
+#%RAML  1.0  DataType
+type: object
+properties:
+  customerNumber:
+    description: Unique  Identifier  for  customer  record
+    type: number
+    required: true
+  status:
+    description: ID  representing  customer  status
+    type: string
+    required: true
+    minLength: 2
+    maxLength: 2
+  statusDescription:
+    description: description  of  customer  status  (active  or  inactive)
+    type: string
+    required: true
+    minLength: 11
+    maxLength: 11
+  applicationStatus:
+    description: Application status
+    type: string
+    required: false
+    minLength: 2
+    maxLength: 2
+  applicationStatusDescription:
+    description: Application Status Description
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 25
+  startDate:
+    description: The  date  the  customer  was  originalmade  active
+    type: datetime
+    required: false
+  customerAddress:
+    description: Address  which  the  bills  are  sent
+    type: !include CustomerMailingAddress.raml
+    required: false
+  customerPhones:
+    description: Collection  of  phone  strings  customer  has  on  file
+    type: array
+    items: !include CustomerPhone.raml
+    required: false
+  customerEmails:
+    description: Collection  of  customer  emails  on  file
+    type: array
+    items: !include CustomerEmail.raml
+    required: false
+  customerType:
+    description: Customer Type
+    type: string
+    required: false
+    minLength: 1
+    maxLength: 1
+  customerTypeDescription:
+    description: Describes  the  type  of  customer  (individual,  corporation,  government.  Etc)
+    type: string
+    required: false
+    minLength: 25
+    maxLength: 25
+  firstName:
+    description: Customers  first  name
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 15
+  middleName:
+    description: Customersmiddle  Name
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 15
+  lastName:
+    description: Customers  last  name
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 20
+  title:
+    description: Customers  title
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 8
+  suffix:
+    description: Customers  suffix
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 4
+  isSSNprovided:
+    description: Customers  is  ssn  provided
+    type: boolean
+    required: false
+  SSN:
+    description: Customers  ssn
+    type: integer
+    required: false
+  creditScore:
+    description: Customers  credit  score
+    type: integer
+    required: false
+    maximum: 99
+  completeName:
+    description: Customers  complete  name
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 56
+  DOB:
+    description: Customers  date  of  birth
+    type: datetime
+    required: false
+  languageCode:
+    description: Customers  language  Code
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 7
+  languageDescription:
+    description: Customer  Language  Description
+    type: string
+    required: false
+    minLength: 3
+    maxLength: 3
+  BTC:
+    description: Customers  best  time  to  call
+    type: datetime
+    required: false
+  DLNumber:
+    description: Customers  drivers  license  string
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 13
+  DLState:
+    description: Customers  dln  state
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 2
+  maritalStatus:
+    description: Customersmarital  status
+    type: string
+    required: false
+    minLength: 1
+    maxLength: 1
+  employerName:
+    description: Customers  employer  name
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 13
+  employeeCompany:
+    description: Customers  employee  company
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 30
+  seasonalResident: 
+    description: Customers  seasonal  resident
+    type: boolean
+    required: false
+  seniorCitizenActivationDiscount:
+    description: Customers  senior  citizen  activation  discount
+    type: boolean
+    required: false
+  companyName:
+    description: Companys  company  name
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 28
+  legalName:
+    description: Companys  legal  name
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 28
+  FEIN:
+    description: Companys  Federal  epployee  ID
+    type: integer
+    required: false  
+  SIC:
+    description: Companys  Standard  Industrial  Code
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 6
+  incorporatedState:
+    description: Companys  incorporated  state
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 2
+  incorporatedCocurrentyCountry:
+    description: Companys  incorporated  country
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 21
+  jobTitle:
+    description: Employee's title
+    type: string
+    required: false
+  ssn:
+    description: Employee's SSN
+    type: number
+    required: false
+  address:
+    description: Employee's address
+    type: string
+    required: false
+  phone:
+    description: Employee's phone
+    type: string
+    required: false

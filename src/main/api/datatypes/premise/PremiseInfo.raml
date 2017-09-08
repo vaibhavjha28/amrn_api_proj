@@ -1,0 +1,88 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  premiseNumber:
+    description: Unique Identifier for premise
+    type: number
+    required: false
+  operatingCenterCode:
+    description: Its the OpCenter code
+    type: string
+    required: false
+    minLength: 3
+    maxLength: 3
+  operatingCenterDesc:
+    description: Describes the OpCenter based on code
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 15
+  companyCode:
+    type: string
+    required: false
+    minLength: 4
+    maxLength: 4
+  companyDesc:
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 30
+  countyCode:
+    description: Municipality county code
+    type: string
+    required: false
+    minLength: 3
+    maxLength: 3
+  countyDesc:
+    description: Describes the county based on code
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 30
+  streetAddress:
+    description: Address of the premise
+    type: !include ../common/address/CommunicationMailingAddress.raml
+    required: false
+  premiseTypeCode:
+    description: Code for premise type, residential vs commercial types
+    type: string
+    required: false
+    minLength: 2
+    maxLength: 2
+  premiseTypeDescription:
+    description: Drecription of the premise
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 20
+  taxingAreaCode:
+    description: CSS Taxing area Code
+    type: string
+    required: false
+    minLength: 4
+    maxLength: 4
+  taxingAreaDescription:
+    description: CSS taxing Area Description
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 20
+  weatherGroupCode:
+    description: CSS Weather Group Code
+    type: string
+    required: false
+    minLength: 2
+    maxLength: 2
+  weatherGroupDescription:
+    description: CSS Weather Group description based on the operating center in CSS
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 20
+  drivingDirections:
+    description: Premise Driving Directions
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 360
+    

@@ -1,0 +1,24 @@
+{
+  "UsagesInfo": [
+    {
+      "billMonth": "2012-04-23T18:25:43.511Z",
+      "startDate": "2012-04-23T18:25:43.511Z",
+      "endDate": "2020-04-23T18:25:43.511Z",
+      "quantityUsage": 12,
+      "averageTemperature": 12,
+      "showCostPerDay": true,
+      "costPerDay": 1,
+      "daysInPeriod": 100
+    },
+    {
+      "billMonth": "2012-04-23T18:25:43.511Z",
+      "startDate": "2012-04-23T18:25:43.511Z",
+      "endDate": "2020-04-23T18:25:43.511Z",
+      "quantityUsage": 12,
+      "averageTemperature": 12,
+      "showCostPerDay": true,
+      "costPerDay": 1,
+      "daysInPeriod": 100
+    }
+  ]
+}

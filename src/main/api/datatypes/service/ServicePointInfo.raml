@@ -1,0 +1,102 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  billAccountNumber:
+    description: Bill account number associated
+    type: number
+    required: false
+  servicePointId:
+    description: Premise number associated with service point
+    type: string
+    required: false
+  energyType:
+    description: 
+    type: string
+    required: false
+  serviceType:
+    description: 
+    type: string
+    required: false
+  deliveryRateCode:
+    description: 
+    type: string
+    required: false
+  deliveryRateName:
+    description: 
+    type: string
+    required: false
+  supplyRateCode:
+    description: 
+    type: string
+    required: false
+  supplyRateName:
+    description: 
+    type: string
+    required: false
+  tariffCode:
+    description: 
+    type: string
+    required: false
+  tariffName:
+    description: 
+    type: string
+    required: false
+  activityState:
+    description: 
+    type: string
+    required: false
+  isDefaultRateForServiceType:
+    description: 
+    type: boolean
+    required: false
+  meter:
+    description: 
+    type: !include ../meter/MeterInfo.raml
+    required: false
+  serviceTypeCode:
+    description: 
+    type: string
+    required: false
+  servicePointStatusCode:
+    description: 
+    type: string
+    required: false
+  servicePointStatusDescription:
+    description: 
+    type: string
+    required: false
+  cityCountyCode:
+    description: 
+    type: string
+    required: false
+  cityCountyDescription:
+    description: 
+    type: string
+    required: false
+  dateRateEffectiveSupply:
+    description: 
+    type: datetime
+    required: false
+  dateRateEffectiveDelivery:
+    description: 
+    type: datetime
+    required: false
+  gasServiceAttributes:
+    description: Gas ServicePoint Attributes
+    required: false
+    type: array
+    items: !include servicePointAttributes/GasServicePointAttributes.raml
+  electricServiceAttributes:
+    description: Electric Service Attributes
+    required: false
+    type: array
+    items: !include servicePointAttributes/ElectricServicePointAttributes.raml
+  deregulatedServiceAttributes:
+    description: Gas ServicePoint Attributes
+    type: array
+    items: !include servicePointAttributes/DeregulatedServicePointAttributes.raml
+    required: false
+  monthlyUsageInformation:
+    description: 
+    type: !include ../usage/MonthlyUsageInfo.raml
+    required: false

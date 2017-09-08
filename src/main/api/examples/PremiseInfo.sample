@@ -1,0 +1,33 @@
+{
+  "premiseNumber": 101,
+  "operatingCenterCode": "OCC",
+  "operatingCenterDesc": "This is code",
+  "companyCode": "CC12",
+  "companyDesc": "This is companycode",
+  "countyCode": "CAA",
+  "countyDesc": "county detail",
+  "streetAddress": {
+    "addressID": 12345,
+    "addressType": {
+      "addressTypeID": "H",
+      "description": "home address"
+    },
+    "isReadOnly": true,
+    "addressDetails": {
+      "addressLine1": "1901 Chouteau Ave",
+      "addressLine2": "",
+      "addressLine3": "",
+      "city": "St. Louis",
+      "state": "MO",
+      "postalCode": "63105",
+      "country": "US"
+    }
+  },
+  "premiseTypeCode": "RS",
+  "premiseTypeDescription": "Residential",
+  "taxingAreaCode": "TAXC",
+  "taxingAreaDescription": "TAXC description",
+  "weatherGroupCode": "WA",
+  "weatherGroupDescription": "Weather group desc",
+  "drivingDirections": "Direction"
+}

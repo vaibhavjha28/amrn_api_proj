@@ -1,0 +1,103 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  billAccountNumber:
+    description: 
+    type: number
+    required: false
+  servicePointId:
+    description: 
+    type: integer
+    required: false
+  meterId:
+    description: 
+    type: string
+    required: false
+  activityState:
+    description: 
+    type: string
+    required: false
+  energyType:
+    description: Electric / Gas
+    type: string
+    required: false
+  serviceType:
+    description: Gas / Electricity / Lighting 
+    type: string
+    required: false
+  manufacturer:
+    description: 
+    type: string
+    required: false
+  readingUseDescription:
+    description: Meter Reading Use (dial, interval)
+    type: string
+    required: false
+  numberOfDials:
+    description: Number of dials on the meter
+    type: number
+    required: false
+  effectiveDate:
+    description: 
+    type: datetime
+    required: false
+  setCompleteDate:
+    description: 
+    type: datetime
+    required: false
+  removeCompleteDate:
+    description: 
+    type: datetime
+    required: false
+  meterStatusDescription:
+    description: meter status (removed, booted, cut..)
+    type: string
+    required: false
+  meterPointStatus:
+    description: Billing Status (active, inactive)
+    type: string
+    required: false
+  meterPointType:
+    description: Meter Point type determines the types of reads
+    type: string
+    required: false
+  meterLocation:
+    description: location of the meter, outside
+    type: string
+    required: false
+  readingMethod:
+    description: AMR, EMR, AMI
+    type: string
+    required: false
+  meterRelationship:
+    description: Master , subordinate
+    type: string
+    required: false
+  meterPhase:
+    description: 
+    type: string
+    required: false
+  periodicUse:
+    description: 
+    type: string
+    required: false
+  serviceDrop:
+    description: 
+    type: string
+    required: false
+  isAMI:
+    description: 
+    type: boolean
+    required: false
+  electricMeterInformation:
+    description: 
+    type: !include meterAttributes/ElectricMeterAttributes.raml
+    required: false
+  IsNonStandard:
+    description: 
+    type: boolean
+    required: false
+  IsTheMeterOutside:
+    description: 
+    type: boolean
+    required: false

@@ -1,0 +1,13 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  billAccountNumber:
+    description: CSS Bill Account Number
+    type: number
+    required: true
+    minimum: 0
+    maximum: 9999999999
+  address:
+    description: CSS Customer Address
+    type: !include ../common/address/CommunicationMailingAddress.raml
+    required: true

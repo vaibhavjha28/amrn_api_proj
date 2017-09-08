@@ -1,0 +1,38 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  addressLine1:
+    description: Mailing Address Line 1
+    type: string
+    required: false
+    maxLength: 28
+  addressLine2:
+    description: Mailing Address Line 2
+    type: string
+    required: false
+    maxLength: 28
+  addressLine3:
+    description: Mailing Address Line 3
+    type: string
+    required: false
+    maxLength: 28
+  city:
+    description: City
+    type: string
+    required: false
+    maxLength: 19
+  state:
+    description: State
+    type: string
+    required: false
+    maxLength: 2
+  postalCode:
+    description: Zip Code
+    type: string
+    required: false
+    maxLength: 5
+  country:
+    description: Country
+    type: string
+    required: false
+    maxLength: 28

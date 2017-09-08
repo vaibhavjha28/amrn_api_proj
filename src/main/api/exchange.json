@@ -1,0 +1,6 @@
+{
+  "main": "ameren-sys-apis-v1.raml",
+  "name": "ameren-sys-apis-v1",
+  "classifier": "raml",
+  "tags": []
+}

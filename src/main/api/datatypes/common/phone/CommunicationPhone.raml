@@ -1,0 +1,27 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  phoneID:
+    description: Phone Identification ID
+    type: integer
+    required: true
+  phoneType:
+    description: Phone Type
+    type: string
+    required: true
+  isPrimary:
+    description: Primary Phone
+    type: boolean
+    required: true
+  isUnlisted:
+    description: Unlisted Phone Number
+    type: boolean
+    required: false
+  isTextable:
+    description: Primary Phone
+    type: boolean
+    required: false
+  phoneNumberDetails:
+    description: Phone Number
+    type: !include PhoneNumberDetails.raml
+    required: true

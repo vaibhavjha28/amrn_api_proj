@@ -1,0 +1,118 @@
+#%RAML 1.0 DataType
+properties:
+  billAccountNumber:
+    description:
+    type: number
+    required: true
+  nextReadDate:
+    description: Date for next scheduled reading
+    type: datetime
+    required: false
+  unbilledBalance:
+    description: The unbilled balance on an account
+    type: number
+    required: false
+  currentAccountBalance:
+    description: Accounts Balance Due
+    type: number
+    required: false
+  currentBillAmount:
+    description: current Bill amount
+    type: number
+    required: false
+  currentBillDate:
+    description: current bill date
+    type: datetime
+    required: false
+  previousBillAmount:
+    description: previous bill amount
+    type: number
+    required: false
+  previousBillDate:
+    description: previous bill date
+    type: datetime
+    required: false
+  lastPaymentAmount:
+    description: last Payment Amount
+    type: number
+    required: false
+  lastPaymentDate:
+    description: last Payment Date
+    type: datetime
+    required: false
+  suspendedCharges:
+    description: suspended changes duducted from 
+    type: number
+    required: false
+  excessCreditAmount:
+    description:
+    type: number
+    required: false
+  creditRating:
+    description:
+    type: string
+    required: false
+  balanceForward:
+    description:
+    type: number
+    required: false
+  pledgeAmount:
+    description:
+    type: number
+    required: false
+  dueAmount:
+    description:
+    type: number
+    required: false
+  pastDueAmount:
+    description:
+    type: number
+    required: false
+  pendingPayment:
+    description:
+    type: number
+    required: false
+  lastPayment:
+    description:
+    type: number
+    required: false
+  paymentDate:
+    description:
+    type: datetime
+    required: false
+  disconnectNoticeDateLastIssued:
+    description:
+    type: datetime
+    required: false
+  disconnectNoticeAmount:
+    description:
+    type: number
+    required: false
+  disconnectNoticeDueDate:
+    description:
+    type: datetime
+    required: false
+  reconnectAmount:
+    description:
+    type: number
+    required: false
+  reinstateDPAAmount:
+    description:
+    type: number
+    required: false
+  nextCollectionAction:
+    description:
+    type: string
+    required: false
+  nextCollectionActionDate:
+    description:
+    type: datetime
+    required: false
+  daysInBillingCycle:
+    description:
+    type: number
+    required: false
+  financialActivity :
+    description:
+    type: !include FinancialActivityInfo.raml
+    required: false

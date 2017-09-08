@@ -1,0 +1,214 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  accountNumber:
+    description: Unique ID. BillingAccount is a core business concept that is common across CRM and Mobile First. 
+    type: number
+    required: false
+  premise:
+    description: Premise serviced by Ameren. Could be many for one customer
+    type: !include ../PremiseInfo.raml
+    required: false
+  customer:
+    description: Details about the customer
+    type: !include ../customer/CustomerInfo.raml
+    required: false
+  mailingAddress:
+    description: Address for mailing communication
+    type: !include AccountMailingAddress.raml
+    required: false
+  primaryPhone:
+    description: Primary phone number of customer for bill account
+    type: !include AccountPhone.raml
+    required: false
+  secondaryPhone:
+    description: Secondary phone number of customer for bill account
+    type: !include AccountPhone.raml
+    required: false
+  accountStatusCode:
+    description: Status code
+    type: string
+    required: false
+    minLength: 2
+    maxLength: 2
+  revenueClassCode:
+    description: revenue class code (R, C)
+    type: string
+    required: false
+    minLength: 1
+    maxLength: 1
+  revenueClassDescription:
+    description: revenue class description (Residential, Commercial)
+    type: string
+    required: false
+  accountStatusDescription:
+    description: Status description
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 30
+  tariffTypeCode:
+    description: Tariff type code (1,2,3,5)
+    type: string
+    required: false
+    minLength: 2
+    maxLength: 2
+  tariffTypeDescription:
+    description: Tariff type description (residential, industrial, commercial, etc)
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 50
+  accountTypeCode:
+    description: Bill Account Type code
+    type: string
+    required: false
+    minLength: 2
+    maxLength: 2
+  accountTypeDescription:
+    description: Bill Account Type Description
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 30
+  weatherGroupCode:
+    description: Weather group code
+    type: string
+    required: false
+    minLength: 2
+    maxLength: 2
+  weatherGroupDescription:
+    description: Weather group description
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 50
+  billGroup:
+    description: Usually a number (e.g., 19) denoting the day of the month to end a billing cycle.
+    type: integer
+    required: false
+  dateLastBilled:
+    description: Date the bill account last billed 
+    type: datetime
+    required: false
+  dateNextBilled:
+    description: Aproximate date the bill account will bill next
+    type: datetime
+    required: false
+  summarySubordinate:
+    description: Is the bill account a subordinate to a master
+    type: boolean
+    required: false
+  collectionStatus:
+    description: Collection status code
+    type: string
+    required: false
+    minLength: 3
+    maxLength: 3
+  collectionDescription:
+    description: Collection status description
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 45
+  bankruptcy:
+    description: Bankrupcy code , only present if the bill account is written off
+    type: string
+    required: false
+    minLength: 4
+    maxLength: 4
+  bankruptcyDescription:
+    description: bankrupcy code description
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 50
+  customerSegmentCode:
+    description: A kind of profiling for marking purposes (code)
+    type: string
+    required: false
+    minLength: 2
+    maxLength: 2
+  customerSegmentDescription:
+    description: A kind of profiling for marking purposes (description)
+    type: string
+    required: false
+    minLength: 0
+    maxLength: 30
+  specialHandling:
+    description: Account special handling (Cash only, 60 Day Special, etc)
+    type: string
+    required: false
+    maxLength: 30
+  isSubjectToDisconnect:
+    description: The Bill Account is Suject to Disconnected for non pay
+    type: boolean
+    required: false
+  isCashOnlyRes:
+    description: Cash Only Residence
+    type: boolean
+    required: false
+  hasLegacyMeter:
+    description: Has legacy meters in the premise
+    type: boolean
+    required: false
+  hasAMRMeter:
+    description: Has AMR meters in the premise
+    type: boolean
+    required: false
+  hasAMIMeter:
+    description: Has AMI meters in the premise
+    type: boolean
+    required: false
+  isInCollections:
+    description: The Bill Account is currently in collections for non payment
+    type: boolean
+    required: false
+  isEnrolledInAlerts:
+    description: Account is enrolled in Alerts
+    type: boolean
+    required: false
+  hasAccountPassword:
+    description: Account is currently password protected 
+    type: boolean
+    required: false
+  hasFraudAlert:
+    description: Customer has a Fraud Alert 
+    type: boolean
+    required: false
+  hasPullBill:
+    description: it is an administrative feature. When this attribute is TRUE, Ameren hold off sending bill to the customer in order to have a detailed review.
+    type: boolean
+    required: false
+  peakTimeRewards:
+    description: Peak Time Rewards Program
+    required: false
+    type: !include ../program/ProgramOption.raml
+  budgetBilling:
+    description: Budget Billing Program
+    required: false
+    type: !include ../program/ProgramOption.raml
+  paperless:
+    description: Paperless bill
+    required: false
+    type: !include ../program/ProgramOption.raml
+  directPay:
+    description: Bill Account is enrolled in Direct pay
+    required: false
+    type: !include ../program/ProgramOption.raml
+  medicalEmergencyRegistry:
+    description: Medical Emergency Registry
+    required: false
+    type: !include ../program/ProgramOption.raml
+  communitySolar:
+    description: Account Enrolled in community Solar program
+    required: false
+    type: !include ../program/ProgramOption.raml
+  landlord:
+    description: Premise is part of landlord association (leave on program
+    required: false
+    type: !include ../program/ProgramOption.raml
+  homeAutomation:
+    description: Automation programs for AMI meters
+    required: false
+    type: !include ../program/ProgramOption.raml

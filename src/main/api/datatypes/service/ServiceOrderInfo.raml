@@ -1,0 +1,121 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+  serviceOrderNumber:
+    description: Unique ID.
+    type: integer
+    required: true
+  billAccountNumber:
+    description: CSS Bill Account ID
+    type: number
+    required: false
+  premiseNumber:
+    description: Premise unique ID
+    type: integer
+    required: true 
+  fieldOrderNumber:
+    description: Field Order Number to tie to field order object
+    type: integer
+    required: false
+  serviceTypeCode:
+    description: Service type code
+    type: string
+    required: false
+    minLength: 4
+    maxLength: 4
+  serviceTypeDescription:
+    description: Service Description (Gas, electric, lighting, gas and electric)
+    type: string 
+    required: false
+    maxLength: 20
+  dateWanted:
+    description: Date wanted for the service order to take effect
+    type: datetime
+    required: true
+  serviceOrderTypeCode:
+    description: Code for the type of service order
+    type: string
+    required: true
+    minLength: 2
+    maxLength: 2
+  serviceOrderTypeDescription:
+    description: Description of the service order type (connect, disconnect, CMO, etc)
+    type: string
+    required: true
+    maxLength:55
+  serviceOrderActionReason:
+    description: Action or reason on the service order
+    type: string
+    required: false
+    maxLength: 50
+  serviceOrderStatusCode:
+    description: code for the service order status
+    type: string
+    required: true
+    minLength: 2
+    maxLength: 2
+  serviceOrderStatusDescription:
+    description: Status of service order (issued, cancelled, completed, etc)
+    type: string
+    required: true
+    maxLength: 20
+  timeFrameCode:
+    description: code for the timeframe for order to be executed
+    type: string
+    required: false
+    minLength: 1
+    maxLength: 1
+  timeFrameDescription:
+    description: timeframe description (am, pm, 8:00, 9:00, 8:00 to 10:00, etc)
+    type: string
+    required: false
+    maxLength: 20
+  issueDate:
+    description: date the order was issued
+    type: datetime
+    required: true
+  timeOrderIssued:
+    description: The Time the Order was issued
+    type: string
+    required: false
+    minLength: 8
+    maxLength: 8
+  premiseAddressCompressed:
+    description: The premise Address Contatenated
+    type: string
+    required: false
+    maxLength: 69
+  customerNameCompressed:
+    description: Name of The customer Concatenated
+    type: string
+    required: false
+    maxLength: 56
+  issueComments:
+    description: remarks for the issuance of the order
+    type: string
+    required: false
+    maxLength: 360
+  userID:
+    description: Ameren's User ID
+    type: string
+    required: false
+    maxLength: 8
+  userName:
+    description: Name of the User that issued the order
+    type: string
+    required: false
+    maxLength: 300
+  fieldOrderTypeCode:
+    description: Type of field Order
+    type: string
+    required: false
+    maxLength: 2    
+  fieldOrderDescription:
+    description: Description of the work being done in the field
+    type: string
+    required: false
+    maxLength: 20
+  completedDate:
+    description: Completed date
+    type: datetime
+    required: false

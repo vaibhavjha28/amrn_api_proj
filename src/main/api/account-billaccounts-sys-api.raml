@@ -1,0 +1,43 @@
+#%RAML 1.0
+#baseUri: https://mocksvc.mulesoft.com/mocks/48b9d838-5a5a-4b0d-8821-319407e77076/mocks/2c1bdcd7-b7b0-4d37-b7ac-dff5f01dd2e7/mocks/d7789193-0a6b-4e27-87c9-945275b92001/mocks/7538b678-e24f-4ec7-be51-ebb875817904/mocks/09a76320-59d9-42c0-9ee1-fa0a1c473614/mocks/364bc24f-ba9a-4d60-88e8-aef628f3fe28 # baseUri: https://mocksvc.mulesoft.com/mocks/2c1bdcd7-b7b0-4d37-b7ac-dff5f01dd2e7/mocks/d7789193-0a6b-4e27-87c9-945275b92001/mocks/7538b678-e24f-4ec7-be51-ebb875817904/mocks/09a76320-59d9-42c0-9ee1-fa0a1c473614/mocks/364bc24f-ba9a-4d60-88e8-aef628f3fe28 # baseUri: https://mocksvc.mulesoft.com/mocks/d7789193-0a6b-4e27-87c9-945275b92001/mocks/7538b678-e24f-4ec7-be51-ebb875817904/mocks/09a76320-59d9-42c0-9ee1-fa0a1c473614/mocks/364bc24f-ba9a-4d60-88e8-aef628f3fe28 # baseUri: https://mocksvc.mulesoft.com/mocks/7538b678-e24f-4ec7-be51-ebb875817904/mocks/09a76320-59d9-42c0-9ee1-fa0a1c473614/mocks/364bc24f-ba9a-4d60-88e8-aef628f3fe28 # baseUri: https://mocksvc.mulesoft.com/mocks/09a76320-59d9-42c0-9ee1-fa0a1c473614/mocks/364bc24f-ba9a-4d60-88e8-aef628f3fe28 # baseUri: https://mocksvc.mulesoft.com/mocks/364bc24f-ba9a-4d60-88e8-aef628f3fe28 # baseUri: https://mocksvc.mulesoft.com/mocks/8f5276e1-e29c-4df8-9586-f3631665b5ef
+baseUri: /sys/account/v1/billAccounts
+title: account-billAccount-sys-api
+
+
+types: 
+  BillAccountInfo: !include datatypes/account/BillAccountInfo.raml
+  BillAccountsInfo: !include datatypes/account/BillAccountsInfo.raml
+
+/{billAccountNo}:
+    uriParameters: 
+      billAccountNo:
+        displayName: BillAccountID
+        description: Account Id for which account info is retrieved
+        example: 12345
+        type: integer
+        required: true
+    get:
+      description: User can get bill account details by passing billAccountNo    
+      responses: 
+          200:
+            body:
+              application/json:
+                type: BillAccountInfo
+                example: !include examples/BillAccountInfo.sample
+
+/phone/{phoneNo}:
+    uriParameters: 
+      phoneNo:
+        displayName: Phone Number
+        description: Phone Number for which account info is retrieved
+        example: "1234567890"
+        type: string
+        required: true
+    get:
+      description: User can get list of bill accounts information by  passing PhoneNumber
+      responses: 
+          200:
+            body:
+              application/json:
+                type: BillAccountsInfo
+                example: !include examples/BillAccountsInfo.sample

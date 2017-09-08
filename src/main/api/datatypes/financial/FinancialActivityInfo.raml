@@ -1,0 +1,46 @@
+#%RAML 1.0 DataType
+properties:
+  billAccountNumber:
+    description: Key identifier
+    type: number
+    required: false
+  date:
+    description: Date for next scheduled reading
+    type: datetime
+    required: false
+  source:
+    description: The unbilled balance on an account
+    type: string
+    required: false
+  debits:
+    description: Accounts Balance Due
+    type: number
+    required: false
+  credits:
+    description: current Bill amount
+    type: number
+    required: false
+  totalBill:
+    description: current bill date
+    type: number
+    required: false
+  balanceForward:
+    description: previous bill amount
+    type: number
+    required: false
+  billingDemand:
+    description: previous bill date
+    type: number
+    required: false
+  daysUsed:
+    description: last Payment Amount
+    type: number
+    required: false
+  billingKwH:
+    description: last Payment Date
+    type: number
+    required: false
+  totalCCF:
+    description: suspended changes duducted from 
+    type: number
+    required: false

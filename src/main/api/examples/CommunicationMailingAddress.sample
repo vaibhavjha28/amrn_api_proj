@@ -1,0 +1,17 @@
+{
+  "addressID": 1,
+  "addressType": {
+    "addressTypeID": "H",
+    "description": "home address"
+  },
+  "isReadOnly": true,
+  "addressDetails": {
+    "addressLine1": "1901 Chouteau Ave",
+    "addressLine2": "",
+    "addressLine3": "",
+    "city": "St. Louis",
+    "state": "MO",
+    "postalCode": "63105",
+    "country": "US"
+  }
+}

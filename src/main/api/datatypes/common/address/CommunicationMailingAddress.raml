@@ -1,0 +1,21 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  addressID:
+    description: Address ID
+    type: integer
+    required: true
+    minimum: 0
+    maximum: 999999999
+  addressType:
+    description: Address Type
+    type: !include AddressType.raml
+    required: true
+  isReadOnly:
+    description: Address is read only
+    type: boolean
+    required: true
+  addressDetails:
+    description: Address
+    type: !include Address.raml
+    required: true

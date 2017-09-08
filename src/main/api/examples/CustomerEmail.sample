@@ -1,0 +1,9 @@
+{
+  "customerNumber": 1234,
+  "customerEmailID": 1234,
+  "emailDetails": {
+    "isVerified": true,
+    "isNotPromotional": false,
+    "emailAddress": "test@ameren.com"
+  }
+}

@@ -1,0 +1,11 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  programOptionType:
+    description: Program Options Type
+    type: !include ProgramOptionType.raml
+    required: true
+  programOptionStatus:
+    description: Program Options Status
+    type: !include ProgramOptionStatus.raml
+    required: true
